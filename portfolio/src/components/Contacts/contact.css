@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+}
+
+.contact-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8rem; /* pushes everything down */
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+
+.contact-subtitle {
+  color: #888;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  color: #111;
+  letter-spacing: 0.5px;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 2rem;
+  padding: 1.5rem 2.5rem;
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  color: #222;
+  font-size: 1.25rem;
+  font-weight: 500;
+  transition: color 0.2s, border-bottom 0.2s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+
+.contact-item:hover {
+  color: #636465bd;
+  border-bottom: 2px solid #545454;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  color: #111;
+  transition: color 0.2s;
+}
+
+
+.contact-nav {
+  display: flex;
+  gap: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #111;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.contact-nav span {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.contact-nav span:hover {
+  color: #696a6b;
+}
+.contact-nav span {
+  cursor: pointer;
+  transition: color 0.2s;
+}.contact-footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  font-size: 1.2rem;
+  color: #777;
+}
+.contact-nav span {
+  cursor: pointer;
+  transition: color 0.2s, border-bottom 0.2s;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.contact-nav span:hover {
+  color: #696a6b;
+  border-bottom: 2px solid #696a6b;
+}
+@media (max-width: 950px) {
+  .contact-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+}

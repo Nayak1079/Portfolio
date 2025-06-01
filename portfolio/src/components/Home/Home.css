@@ -1,0 +1,184 @@
+
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: #fff;
+  padding-top: 90px;
+  padding-left: 40px;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.home-left {
+  flex: 0 0 auto;
+}
+
+.profile-img {
+  width: 420px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  transition: box-shadow 0.2s;
+}
+
+.profile-img:hover {
+  box-shadow: 0 16px 40px rgba(37,99,235,0.2);
+}
+
+.home-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 280px; /* Adjust this value as needed for your design */
+  text-align: center;
+}
+
+.home-greeting, .home-name, .home-role {
+  margin: 0;
+}
+
+.home-greeting {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 10px;
+  left: 120px;
+  text-align: center;
+}
+
+.home-name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0rem;
+  text-align: center;
+}
+
+.home-role {
+  font-size: 2rem;
+  color: #605e5e;
+  font-weight: 600;
+  margin-top: 0.8rem;
+  text-align: center;
+  margin-bottom:0.7rem;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 1.2rem;
+}
+
+.btn-outline {
+  border: 2px solid #222;
+  padding: 0.6rem 1.4rem;
+  border-radius: 28px;
+  background: #fff;
+  color: #222;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-outline:hover {
+  background: #222;
+  color: #fff;
+}
+
+.btn-dark {
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 28px;
+  background: #222;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-dark:hover {
+  background: #444;
+}
+
+.home-socials {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 0.5rem;
+  
+}
+
+.icon {
+  width: 38px;
+  height: 38px;
+  filter: grayscale(1);
+  transition: filter 0.2s;
+}
+
+.icon:hover {
+  filter: grayscale(0);
+}
+
+@media screen and (max-width: 950px) {
+  .home-section {
+    padding: 20px 20px;
+    text-align: center;
+  }
+
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .home-left {
+    order: 1;
+  }
+
+  .home-right {
+    order: 2;
+    align-items: center;
+    height: auto;
+  }
+
+  .profile-img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .home-buttons {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .home-greeting, .home-name, .home-role {
+    text-align: center;
+  }
+
+  .home-socials {
+    justify-content: center;
+  }.navbar-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 80px; /* adjust based on your navbar height */
+  right: 20px;
+  background-color: white;
+  width: max-content;
+  min-width: 150px; /* optional: to avoid overly narrow menu */
+  padding: 12px 16px;
+  text-align: left;
+  gap: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+}

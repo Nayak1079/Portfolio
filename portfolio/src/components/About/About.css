@@ -1,0 +1,126 @@
+.about-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 16px 0 16px;
+  text-align: center;
+}
+
+.about-intro {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 0.1rem;
+  letter-spacing: 1px;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top:10px;
+  margin-bottom: 2.2rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 48px;
+  margin-bottom: 24px;
+}
+
+.about-image img {
+  width: 420px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 32px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+}
+
+.about-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-cards {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.about-card {
+  flex: 1;
+  border: 2px solid #ccc;
+  border-radius: 24px;
+  padding: 32px 24px 24px 24px;
+  background: #fff;
+  text-align: center;
+  min-width: 300px;
+}
+
+.about-icon {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.about-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.about-card p {
+  color: #444;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.about-description {
+  color: #747171;
+  font-size: 1.1rem;
+  text-align: left;
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+.about-scroll {
+  margin-top: 24px;
+  font-size: 2.4rem;
+  color: #111;
+  animation: bounce 1.4s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(12px);}
+}
+
+@media (max-width: 950px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .about-details {
+    align-items: center;
+  }
+  .about-description {
+    text-align: center;
+  }
+  .about-image img {
+    width: 260px;
+    height: 260px;
+  }
+  .about-cards {
+    flex-direction: column;
+    gap: 18px;
+    width: 90%;
+  }
+  .about-card {
+    min-width: 0;
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,134 @@
+.experience-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 16px 0 16px;
+  text-align: center;
+}
+
+.experience-intro {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  letter-spacing: 1px;
+}
+
+.experience-title {
+    margin-top: 10px;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2.2rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.experience-cards {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.experience-card {
+  flex: 1 1 350px;
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 32px;
+  padding: 40px 32px 32px 32px;
+  min-width: 420px;
+  max-width: 520px;
+  height: 400px;
+  box-sizing: border-box;
+  text-align: left;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.04);
+}
+
+.experience-card h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0px;
+  color: #605e5e;
+  margin-bottom: 28px;
+}
+
+.experience-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 12px;
+    margin-top: 64px;
+}
+
+.experience-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+
+
+ .experience-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.experience-icon img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  margin-right: 8px;
+}
+
+.experience-item strong {
+  font-size: 1.1rem;
+  color: #111;
+}
+
+.experience-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #666;
+  font-weight: 400;
+}
+
+
+.experience-scroll {
+  margin-top: 24px;
+  font-size: 2.4rem;
+  color: #111;
+  animation: bounce 1.4s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(12px);}
+}
+
+@media (max-width: 900px) {
+  .experience-cards {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+}
+.experience-card {
+  flex: 1 1 350px;
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 32px;
+  padding: 40px 32px 32px 32px;
+  min-width: 420px;
+  max-width: 520px;
+  height: 400px;
+  box-sizing: border-box;
+  text-align: left;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.04);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.experience-card:hover {
+  box-shadow: 0 16px 48px rgba(37,99,235,0.18), 0 1.5px 10px rgba(0,0,0,0.05);
+  transform: translateY(-8px) scale(1.03);
+  border-color: #2563eb;
+}
