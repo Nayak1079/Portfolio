@@ -1,11 +1,41 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Home.css";
-import profileImg from "../../assests/about.jpg"; // Place your image here
+import profileImg from "../../assests/about.jpg";
 
 function Home() {
-  // Scroll to Skills section when image is clicked
+  const roles = [
+    "Fullstack Developer",
+    "AI & ML Enthusiast",
+    "Tech Explorer",
+    "Problem Solver"
+  ];
+
+  const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
+  const [displayedText, setDisplayedText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentRole = roles[currentRoleIndex];
+    const typingSpeed = isDeleting ? 50 : 300;
+
+    const timeout = setTimeout(() => {
+      setDisplayedText(prev =>
+        isDeleting ? currentRole.slice(0, prev.length - 1) : currentRole.slice(0, prev.length + 1)
+      );
+
+      if (!isDeleting && displayedText === currentRole) {
+        setTimeout(() => setIsDeleting(true), 1500);
+      } else if (isDeleting && displayedText === '') {
+        setIsDeleting(false);
+        setCurrentRoleIndex((prev) => (prev + 1) % roles.length);
+      }
+    }, typingSpeed);
+
+    return () => clearTimeout(timeout);
+  }, [displayedText, isDeleting, currentRoleIndex]);
+
   const handleImageClick = () => {
-    const skillsSection = document.getElementById("skills");
+    const skillsSection = document.getElementById("experience");
     if (skillsSection) {
       skillsSection.scrollIntoView({ behavior: "smooth" });
     }
@@ -26,9 +56,9 @@ function Home() {
         <div className="home-right">
           <p className="home-greeting">Hello, I'm</p>
           <h1 className="home-name">Sujal Nayak</h1>
-         <h2 className="home-role">
-  <span className="bouncy-period">Fullstack Developer</span>
-</h2>
+          <h2 className="home-role">
+            <span className="typewriter">{displayedText}</span>
+          </h2>
 
           <div className="home-buttons">
             <a href="/MTeck_s_Resume (11).pdf" className="btn-outline" download="NayakCV.pdf">Download CV</a>

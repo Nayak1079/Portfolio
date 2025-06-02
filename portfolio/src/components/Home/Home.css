@@ -182,3 +182,22 @@
 }
 
 }
+.typewriter {
+  border-right: 2px solid orange;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: blink-caret 0.75s step-end infinite;
+  font-weight: bold;
+  color: #605e5e;
+  font-size: 1.5rem;
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color:  #605e5e;;
+  }
+}

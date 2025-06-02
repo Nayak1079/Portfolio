@@ -11,7 +11,7 @@ const scrollToSection = (id) => {
 
 const Contact = () => {
   return (
-    <div className="contact-container" id="contact"> >
+    <div className="contact-container" id="contact"> 
       <p className="contact-subtitle">Get in Touch</p>
       <h1 className="contact-title">Contact Me</h1>
       <div className="contact-card">

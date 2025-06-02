@@ -16,7 +16,7 @@ function About() {
             <div className="about-card">
               <span className="about-icon" role="img" aria-label="Experience">🏅</span>
               <h3>Experience</h3>
-              <p>2+ years<br />FullStack Development<br/>Ai&Ml enthusiast</p>
+              <p>2+ years<br/>FullStack Development<br/>Ai&Ml enthusiast</p>
             </div>
             <div className="about-card">
               <span className="about-icon" role="img" aria-label="Education">👥</span>
